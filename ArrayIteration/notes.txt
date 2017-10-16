@@ -1,0 +1,6 @@
+This experiment is measuring the time it takes to traverse through a 2D array in Java; column per column versus row per row.
+
+In Java, 2D arrays do not exist - it is a 1D array containing a reference to other arrays and so forth (the arrays can be jagged for example). 
+Thus, 'a = x[2][3];' is the same as: 'y = x[2]; a = y[3];'
+
+This means that the fastest way to iterate over an 2D array is to pick out each inner array one by one which would load each array in the cache-memory.   
